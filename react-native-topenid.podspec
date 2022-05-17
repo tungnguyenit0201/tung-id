@@ -10,9 +10,8 @@ Pod::Spec.new do |s|
 
   s.authors      = package['author']
   s.homepage     = package['homepage']
-  s.platforms    = { :ios => "9.0", :osx => "10.13" }
+  s.platforms    = { :ios => "11.0", :osx => "10.13" }
 
   s.source       = { :git => "https://github.com/tungnguyenit0201/react-native-topenid.git", :tag => "v#{s.version}" }
 
-  s.dependency 'React-Core'
 end
