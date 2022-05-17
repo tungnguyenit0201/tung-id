@@ -14,4 +14,5 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/tungnguyenit0201/react-native-topenid.git", :tag => "v#{s.version}" }
 
+  s.dependency 'React-Core'
 end
