@@ -12,6 +12,10 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1A6E0DC428362E5C002E0F92 /* Secret.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E0DC328362E5C002E0F92 /* Secret.swift */; };
+		1A6E0DC628362E8E002E0F92 /* Secret.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6E0DC528362E8E002E0F92 /* Secret.m */; };
+		1A6E0DD3283635E3002E0F92 /* Secret.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6E0DD1283635DA002E0F92 /* Secret.framework */; };
+		1A6E0DD4283635E3002E0F92 /* Secret.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6E0DD1283635DA002E0F92 /* Secret.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7699B88040F8A987B510C191 /* libPods-loadingAnimation-loadingAnimationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-loadingAnimation-loadingAnimationTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -26,6 +30,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1A6E0DCB28362F2E002E0F92 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1A6E0DD4283635E3002E0F92 /* Secret.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* loadingAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loadingAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +55,10 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = loadingAnimation/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = loadingAnimation/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-loadingAnimation-loadingAnimationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-loadingAnimation-loadingAnimationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A6E0DC228362E5C002E0F92 /* Secret-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Secret-Swift.h"; sourceTree = "<group>"; };
+		1A6E0DC328362E5C002E0F92 /* Secret.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secret.swift; sourceTree = "<group>"; };
+		1A6E0DC528362E8E002E0F92 /* Secret.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Secret.m; sourceTree = "<group>"; };
+		1A6E0DD1283635DA002E0F92 /* Secret.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Secret.framework; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-loadingAnimation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loadingAnimation.debug.xcconfig"; path = "Target Support Files/Pods-loadingAnimation/Pods-loadingAnimation.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-loadingAnimation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loadingAnimation.release.xcconfig"; path = "Target Support Files/Pods-loadingAnimation/Pods-loadingAnimation.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-loadingAnimation-loadingAnimationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-loadingAnimation-loadingAnimationTests.debug.xcconfig"; path = "Target Support Files/Pods-loadingAnimation-loadingAnimationTests/Pods-loadingAnimation-loadingAnimationTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -59,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A6E0DD3283635E3002E0F92 /* Secret.framework in Frameworks */,
 				0C80B921A6F3F58F76C31292 /* libPods-loadingAnimation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +109,7 @@
 		13B07FAE1A68108700A75B9A /* loadingAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				1A6E0DC028362B0A002E0F92 /* NativeModules */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -94,6 +118,25 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
 			name = loadingAnimation;
+			sourceTree = "<group>";
+		};
+		1A6E0DC028362B0A002E0F92 /* NativeModules */ = {
+			isa = PBXGroup;
+			children = (
+				1A6E0DC128362B15002E0F92 /* SDK */,
+				1A6E0DC328362E5C002E0F92 /* Secret.swift */,
+				1A6E0DC228362E5C002E0F92 /* Secret-Swift.h */,
+				1A6E0DC528362E8E002E0F92 /* Secret.m */,
+			);
+			name = NativeModules;
+			sourceTree = "<group>";
+		};
+		1A6E0DC128362B15002E0F92 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				1A6E0DD1283635DA002E0F92 /* Secret.framework */,
+			);
+			path = SDK;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -184,6 +227,7 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				1A6E0DCB28362F2E002E0F92 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -207,7 +251,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1330;
 					};
 				};
 			};
@@ -411,6 +455,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				1A6E0DC628362E8E002E0F92 /* Secret.m in Sources */,
+				1A6E0DC428362E5C002E0F92 /* Secret.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,6 +476,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-loadingAnimation-loadingAnimationTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -457,6 +504,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-loadingAnimation-loadingAnimationTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = loadingAnimationTests/Info.plist;
@@ -485,6 +533,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SDK",
+				);
 				INFOPLIST_FILE = loadingAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -497,6 +549,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = loadingAnimation;
+				SWIFT_OBJC_BRIDGING_HEADER = "Secret-Swift.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -510,6 +563,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SDK",
+				);
 				INFOPLIST_FILE = loadingAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -522,6 +579,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = loadingAnimation;
+				SWIFT_OBJC_BRIDGING_HEADER = "Secret-Swift.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};

@@ -2,6 +2,7 @@ import React, {useRef, useEffect, useState} from 'react';
 
 import {Animated, Easing, View, Text} from 'react-native';
 import {conmonApi} from '../services/hook';
+import {NativeModules} from 'react-native';
 
 function Loading(props) {
   const {clientAccessToken, loading} = conmonApi();
@@ -9,9 +10,16 @@ function Loading(props) {
   const [token, setToken] = useState();
 
   const onClientAccessToken = async () => {
-    let result = await clientAccessToken();
+    // let result = await clientAccessToken();
+    // setToken(result?.data?.access_token);
+
+    let result = await NativeModules.SecretManagement.fecthApi(
+      'GET',
+      '/trings',
+      (err, res) => setToken(res),
+    );
     console.log('result?.data :>> ', result);
-    setToken(result?.data?.access_token);
+    // setToken(result);
   };
   useEffect(() => {
     onClientAccessToken();
