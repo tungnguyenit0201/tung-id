@@ -1,19 +1,19 @@
 {
-  "name": "react-native-topenid",
+  "name": "tung-id",
   "version": "0.0.9",
   "private": false,
-  "description": "react-native-topenid",
+  "description": "tung-id",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tungnguyenit0201/react-native-topenid.git"
+    "url": "https://github.com/tungnguyenit0201/tung-id.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tungnguyenit0201/react-native-topenid/issues"
+    "url": "https://github.com/tungnguyenit0201/tung-id/issues"
   },
-  "homepage": "https://github.com/tungnguyenit0201/react-native-topenid",
+  "homepage": "https://github.com/tungnguyenit0201/tung-id",
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
