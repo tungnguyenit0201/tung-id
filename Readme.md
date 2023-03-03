@@ -1,6 +1,6 @@
 ## tung-id
 
-`react-native-topenid` is a library of TopenID used for profile management
+`tung-id` is a library of TopenID used for profile management
 
 ## Features
 
