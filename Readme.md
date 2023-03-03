@@ -1,4 +1,4 @@
-## react-native-topenid
+## tung-id
 
 `react-native-topenid` is a library of TopenID used for profile management
 
@@ -11,19 +11,5 @@ Comming soon!!
 from npm
 
 ```bash
-npm install react-native-topenid
-```
-
-```bash
- npm install react-native-svg
-```
-
-from yarn
-
-```bash
-yarn add react-native-topenid
-```
-
-```bash
-  yarn add react-native-svg
+npm tung-id
 ```
